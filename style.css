@@ -651,7 +651,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #424242!important;
 }
 
 .container {
@@ -736,7 +736,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #424242!important;
 }
 
 .portfolio-thumb {
@@ -775,11 +775,15 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #ffaf83!important;
+}
+
+.tc-white-contact {
+    color: #4e1600!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #5b5b5b;
     color: #FFFFFF!important;
 }
 
@@ -822,7 +826,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -1039,4 +1043,17 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+#quote {
+    color: #575757;
+    opacity: 0.9;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#quote_name {
+    font-size: 14px;
+    color: #575757;
+    opacity: 0.8;
 }
