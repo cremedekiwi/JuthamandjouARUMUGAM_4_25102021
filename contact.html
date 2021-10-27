@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
     <!-- Analytics -->
     <script>
       (function (i, s, o, g, r, a, m) {
@@ -28,24 +36,20 @@
     </script>
     <!-- Analytics END -->
 
-    <meta charset="utf-8" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
     <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
+
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="style.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
-    <script src="./js/jquery-3.6.0.min.js" async></script>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/bootstrap.min.js" async></script>
     <script src="./js/blocs.min.js" async></script>
-    <script src="./js/jqBootstrapValidation.min.js" async></script>
-    <script src="./js/formHandler.min.js" async></script>
-    <title>Contact</title>
+    <script src="./js/jquery.touchSwipe.min.js" defer></script>
+    <script src="./js/gmaps.min.js" async></script>
+
+    <title>La chouette agence : contact - entreprise de webdesign à lyon</title>
   </head>
   <body>
     <!-- Principal conteneur -->
@@ -61,17 +65,6 @@
                   alt="atlanta web design logo"
                   height="40"
               /></a>
-              <button
-                id="nav-toggle"
-                type="button"
-                class="ui-navbar-toggle navbar-toggle"
-                data-toggle="collapse"
-                data-target=".navbar-1"
-              >
-                <span class="sr-only">Toggle navigation</span
-                ><span class="icon-bar"></span><span class="icon-bar"></span
-                ><span class="icon-bar"></span>
-              </button>
             </div>
           </nav>
         </div>
@@ -82,21 +75,22 @@
       <div
         class="
           bloc
-          bg-dots-bg bg-repeat
-          bgc-atomic-tangerine
+          bgc-dark-slate-blue
+          bg-presentation
           d-bloc
           bloc-bg-texture
           texture-paper
+          b-parallax
         "
         id="bloc-6"
       >
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-12">
-              <h1 class="text-center hero-bloc-text tc-white-contact">
+              <h1 class="text-center hero-bloc-text tc-white">
                 Parlons web design !
               </h1>
-              <p class="text-center mg-lg tc-white-contact tight-width-whitespace">
+              <p class="text-center mg-lg tc-white tight-width-whitespace">
                 Nous sommes ravis que vous souhaitiez collaborer avec notre
                 agence.<br />
                 Parlez-nous de votre projet en complétant le formulaire
@@ -116,8 +110,6 @@
               <form
                 id="form_1"
                 novalidate
-                success-msg="Your message has been sent."
-                fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
               >
                 <div class="form-group">
                   <label for="name"> Nom </label>
